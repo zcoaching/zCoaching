@@ -1,35 +1,15 @@
 <?php
 $racine = "./"; // cette variable contient le lien vers la racine du site
-//en tete placée dans un autre fichier
+//en tete et menu placée dans un autre fichier
 include ( $racine."includes/entete.php");
-?>
-
-                    <!-- Début du menu horizontal -->
-                    <ul id="MH">
-                        <li><a href="http://www.siteduzero.com/" onclick="window.open(this.href);return false;"><< Retour vers www.siteduzero.com</a>
-                        <li><a href="./">Accueil</a></li>
-                        <li><a href="#" onclick="alert('Indisponible');return false;">Forums</a></li>
-                    </ul>
-                    <!-- Fin du menu horizontal -->
-                    
+include ( $racine."includes/menuH.php");
+?>                  
             <div id="conteneur_2">
 
-                <div id="corps">                    
-                    
-                    <!-- Début du menu vertical -->
-                    <div id="MV">
-                        
-                        <div class="en_tete_MV">Menu</div>
-                        <a href="#" class="lien_MV">Lien</a>
-                        <a href="#" class="lien_MV">Lien</a>
-                        <a href="#" class="lien_MV">Lien</a>
-                        <a href="#" class="lien_MV">Lien</a>
-                        <a href="#" class="lien_MV">Lien</a>
-                        <a href="#" class="lien_MV">Lien</a>
-                        <div class="marge_MV"></div>
-                        
-                    </div>
-                    <!--Fin du menu vertical -->
+                <div id="corps">
+                	<?php
+                	include ( $racine."includes/menuV.php");
+					?>
                     <div id="texte"><div id="overflow">
 
                         <h1>Bienvenue sur zCoaching !</h1>
